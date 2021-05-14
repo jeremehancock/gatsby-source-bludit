@@ -2,12 +2,12 @@
 
 This Gatsby Source plugin allows you to pull in data from your [Bludit](https://bludit.com) site via the [Bludit API](https://docs.bludit.com/en/api/introduction). 
 
-### Dependencies (optional)
+### Dependencies
 
 - node-fetch
 - query-string
 
-## How to install
+### How to install
 
 ```
 npm install gatsby-source-bludit
@@ -27,7 +27,7 @@ Add the following to your `gatsby-config.js` in the plugins array
 
 The example above is using an environment variable to include the Bludit Token securily. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
 
-## How to query for data (source plugins only)
+### How to query for data (source plugins only)
 
 ```
 export const query = graphql`
@@ -47,6 +47,6 @@ export const query = graphql`
 `;
 ```
 
-## How to contribute
+### How to contribute
 
 Any contribution, feedback, and PRs are very welcome. Issues is the preferred method of submitting feedback.
