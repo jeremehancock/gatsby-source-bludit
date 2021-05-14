@@ -19,7 +19,7 @@ Add the following to your `gatsby-config.js` in the plugins array
     {
       resolve: `gatsby-source-bludit`,
       options: {
-        url: "https://pilab.dev/api/pages",
+        url: "https://<YOUR-BLUDIT-URL>/api/pages",
         token: process.env.GATSBY_BLUDIT_TOKEN,
       },
     },
