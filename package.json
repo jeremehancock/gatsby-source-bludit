@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-source-bludit",
+  "version": "1.0.0",
+  "description": "Source content from Bludit via the Bludit API.",
+  "main": "index.js",
+  "homepage": "https://github.com/mhancoc7/gatsby-source-bludit",
+  "bugs": {
+    "url": "https://github.com/mhancoc7/gatsby-source-bludit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhancoc7/gatsby-source-bludit",
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-bludit",
+    "gatsby-source-bludit",
+    "bludit"
+  ],
+  "author": "Jereme Hancock",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "query-string": "^7.0.0"
+  }
+}
