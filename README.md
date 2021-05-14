@@ -4,7 +4,7 @@
   </a>
 
   <a href="https://www.npmjs.com/package/gatsby-source-bludit">
-    <img alt="npm" src="https://img.shields.io/npm/v/gatsby-source-bludit">
+	<img alt="npm" src="https://img.shields.io/npm/v/gatsby-source-bludit?label=npm%20package">
   </a>
 </p>
 
