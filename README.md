@@ -1,3 +1,15 @@
+<p align="center">
+  <a href="https://github.com/mhancoc7/gatsby-source-bludit/blob/main/LICENSE">
+  	<img alt="GitHub license" src="https://img.shields.io/github/license/mhancoc7/gatsby-source-bludit">
+  </a>
+
+  <a href="https://www.npmjs.com/package/gatsby-source-bludit">
+    <img alt="npm" src="https://img.shields.io/npm/v/gatsby-source-bludit">
+  </a>
+</p>
+
+# gatsby-source-bludit
+
 ## Description
 
 This Gatsby Source plugin allows you to pull in data from your [Bludit](https://bludit.com) site via the [Bludit API](https://docs.bludit.com/en/api/introduction). 
