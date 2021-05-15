@@ -1,12 +1,7 @@
-<p align="center">
-  <a href="https://github.com/mhancoc7/gatsby-source-bludit/blob/main/LICENSE">
-  	<img alt="GitHub license" src="https://img.shields.io/github/license/mhancoc7/gatsby-source-bludit">
-  </a>
 
-  <a href="https://www.npmjs.com/package/gatsby-source-bludit">
-	<img alt="npm" src="https://img.shields.io/npm/v/gatsby-source-bludit?label=npm%20package">
-  </a>
-</p>
+[![GitHub license](https://img.shields.io/github/license/mhancoc7/gatsby-source-bludit?color=orange&style=for-the-badge)](https://github.com/mhancoc7/gatsby-source-bludit/blob/main/LICENSE)
+[![demo](https://img.shields.io/badge/Gatsby%20%2B%20Bludit-Demo-green?style=for-the-badge)](https://dumbprojects.com/bludit/)
+[![npm](https://img.shields.io/npm/v/gatsby-source-bludit?label=NPM%20PACKAGE&style=for-the-badge)](https://www.npmjs.com/package/gatsby-source-bludit)
 
 # gatsby-source-bludit
 
@@ -17,7 +12,6 @@ This Gatsby Source plugin allows you to pull in data from your [Bludit](https://
 ### Dependencies
 
 - node-fetch
-- query-string
 
 ### How to install
 
