@@ -2,6 +2,8 @@
 [![GitHub license](https://img.shields.io/github/license/mhancoc7/gatsby-source-bludit?color=orange&style=for-the-badge)](https://github.com/mhancoc7/gatsby-source-bludit/blob/main/LICENSE)
 [![demo](https://img.shields.io/badge/Gatsby%20%2B%20Bludit-Demo-green?style=for-the-badge)](https://dumbprojects.com/bludit/)
 [![npm](https://img.shields.io/npm/v/gatsby-source-bludit?label=NPM%20PACKAGE&style=for-the-badge)](https://www.npmjs.com/package/gatsby-source-bludit)
+[![gatsby](https://img.shields.io/static/v1?label=TRY&message=GATSBY&color=blueviolet&style=for-the-badge)](https://www.gatsbyjs.com/)
+[![bludit](https://img.shields.io/static/v1?label=TRY&message=BLUDIT&color=black&style=for-the-badge)](https://www.bludit.com)
 
 # gatsby-source-bludit
 
