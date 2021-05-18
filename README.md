@@ -21,7 +21,7 @@ This Gatsby Source plugin allows you to pull in data from your [Bludit](https://
 npm install gatsby-source-bludit
 ```
 
-Add the following to your `gatsby-config.js` in the plugins array
+Examples of what to add to your `gatsby-config.js` in the plugins array:
 
 ```
     {
@@ -29,18 +29,40 @@ Add the following to your `gatsby-config.js` in the plugins array
       options: {
         url: "https://<YOUR-BLUDIT-URL>/api/pages",
         token: process.env.GATSBY_BLUDIT_TOKEN,
+        numberOfItems: "10", // Only available on the /api/pages endpoint
+        rootKey: "BluditPages"
+      },
+    },
+    {
+      resolve: `gatsby-source-bludit`,
+      options: {
+        url: "https://<YOUR-BLUDIT-URL>/api/categories",
+        token: process.env.GATSBY_BLUDIT_TOKEN,
+        rootKey: "BluditCategories"
       },
     },
 ```
 
-The example above is using an environment variable to include the Bludit Token securily. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
+The example above shows setting two endpoints for usage.
 
-### How to query for data (source plugins only)
+## Options
+
+| **Name**  | **Type**        | **Description**                                                                                                                                                                                         |
+| :-------------- | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| url             | string    | `Required` Url of your API endpoint.                                  |
+| token           | string    | `Required` API Token. 
+| rootKey         | string    | `Required` Name the endpoint.
+| numberOfItems   | string    | `Optional` Number of items to return. Only used for the `/api/pages` endpoint. Default is set to return all.
+
+
+The examples above is using an environment variable to include the Bludit Token securely. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
+
+### How to query for data
 
 ```
 export const query = graphql`
   {
-    allBludit(limit: 9) {
+    allBluditPages {
       edges {
         node {
           id
@@ -54,6 +76,8 @@ export const query = graphql`
   }
 `;
 ```
+
+Be sure to set the `allBluditPages` above to use the `rootKey` that you set for the endpoint. 
 
 ### How to contribute
 

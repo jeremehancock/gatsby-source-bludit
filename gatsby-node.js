@@ -1,26 +1,26 @@
 const fetch = require("node-fetch")
 
 exports.sourceNodes = async (
-  { actions, createNodeId, createContentDigest },
-  options
+    { actions, createNodeId, createContentDigest, reporter },
+    options
 ) => {
   try {
-    const { url, token } = options
+    const { url, token, numberOfItems, rootKey } = options
 
-    const res = await fetch(`${url}?token=${token}`)
+    const res = await fetch(`${url}?token=${token}&numberOfItems=${numberOfItems || "-1"}`)
     const data = await res.json()
     data.data.forEach(page => {
       const node = {
         ...page,
-        id: createNodeId(`BLUDIT-DATA-${page.key}`),
+        id: createNodeId(`${rootKey.toUpperCase()}-DATA-${page.key}`),
         internal: {
-          type: "Bludit",
+          type: rootKey,
           contentDigest: createContentDigest(page),
         },
       }
       actions.createNode(node)
     })
   } catch (error) {
-    console.log(error)
+    reporter.panic(error.message);
   }
 }
