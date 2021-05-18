@@ -46,7 +46,7 @@ Examples of what to add to your `gatsby-config.js` in the plugins array:
 - The example above shows setting two endpoints for usage.
 - The examples above are using an environment variable to include the Bludit Token securely. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
 
-## Options
+### Options
 
 | **Name**  | **Type**        | **Description**                                                                                                                                                                                         |
 | :-------------- | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
