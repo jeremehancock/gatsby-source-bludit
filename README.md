@@ -43,7 +43,8 @@ Examples of what to add to your `gatsby-config.js` in the plugins array:
     },
 ```
 
-The example above shows setting two endpoints for usage.
+- The example above shows setting two endpoints for usage.
+- The examples above are using an environment variable to include the Bludit Token securely. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
 
 ## Options
 
@@ -53,9 +54,6 @@ The example above shows setting two endpoints for usage.
 | token           | string    | `Required` API Token. 
 | rootKey         | string    | `Required` Name the endpoint.
 | numberOfItems   | string    | `Optional` Number of items to return. Only used for the `/api/pages` endpoint. Default is set to return all.
-
-
-The examples above is using an environment variable to include the Bludit Token securely. [Learn More](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/)
 
 ### How to query for data
 

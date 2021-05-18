@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-bludit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Source content from Bludit via the Bludit API.",
   "main": "index.js",
   "scripts": {
